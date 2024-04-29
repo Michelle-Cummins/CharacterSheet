@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Sheet</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+
+<body>
+
+  <h1>DND Character Sheet</h1>
+
+  <div class="formdisplay">
+    <form id="characterForm">
+
+      <div class="userinfo">
+      <label for="username">Usernme:</label><br>
+      <input type="username" id="username" name="username" autocomplete="username"><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" autocomplete="email"><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" autocomplete="current-password"><br><br>
+      </div>
+
+      <div class="charactername">
+        <label for="characterName">Character Name:</label><br>
+        <input type="text" id="characterName" name="characterName"><br><br>
+
+        <label for="hitPoints">Hit Points</label><br>
+        <input type="number" name="hitPoints" id="hitPoints" min="0"><br><br>
+      </div>
+
+      <div class="maindetails">
+
+
+
+        <label for="characterClass">Class:</label><br>
+        <select name="characterClass" id="characterClass">
+          <option value="selectclass">Select Class</option>
+          <option value="ranger">Ranger</option>
+          <option value="wizard">Wizard</option>
+          <option value="sorcerer">Sorcerer</option>
+          <option value="warlock">Warlock</option>
+          <option value="barbarian">Barbarian</option>
+          <option value="bard">Bard</option>
+          <option value="cleric">Cleric</option>
+          <option value="druid">Druid</option>
+          <option value="fighter">Fighter</option>
+          <option value="rogue">Rogue</option>
+          <option value="monk">Monk</option>
+          <option value="paladin">Paladin</option>
+        </select>
+        <br><br>
+
+        <label for="characterRace">Race:</label><br>
+        <input type="text" id="characterRace" name="characterRace"><br><br>
+      </div>
+
+
+      <div class="armourinitiativespeed">
+        <label for="armourClass">Armour Class</label><br>
+        <input type="number" id="armourClass" name="armourClass" min="5" max="100"><br><br>
+
+        <label for="initiative">Initiative</label><br>
+        <input type="number" id="initiative" name="initiative" max="24"><br><br>
+
+        <label for="speedAmount">Speed</label><br>
+        <input type="number" id="speedAmount" name="speedAmount" min="0"><br><br>
+
+      </div>
+
+      <div class="cantrips">
+        <label>Cantrips</label><br><br>
+        <input type="checkbox" id="acidsplash" name="cantrips" value="cantrips">
+        <label for="acidsplash">Acid Splash</label><br>
+        <input type="checkbox" id="chilltouch" name="cantrips" value="cantrips">
+        <label for="chilltouch">Chill Touch</label><br>
+        <input type="checkbox" id="magehand" name="cantrips" value="cantrips">
+        <label for="magehand">Mage Hand</label><br>
+        <input type="checkbox" id="firebolt" name="cantrips" value="cantrips">
+        <label for="firebolt">Fire Bolt</label><br>
+        <input type="checkbox" id="minorillusion" name="cantrips" value="cantrips">
+        <label for="minorillusion">Minor Illusion</label><br>
+        <input type="checkbox" id="poisonspray" name="cantrips" value="cantrips">
+        <label for="poisonspray">Poison Spray</label><br>
+        <input type="checkbox" id="sacredflame" name="cantrips" value="cantrips">
+        <label for="sacredflame">Sacred Flame</label><br>
+        <input type="checkbox" id="mending" name="cantrips" value="cantrips">
+        <label for="mending">Mending</label><br>
+
+
+        <br><br>
+      </div>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+  </div>
+
+
+
+  <div id="characterDetails">
+
+
+  </div>
+
+  <script src="java/code.js"></script>
+</body>
+
+</html>
